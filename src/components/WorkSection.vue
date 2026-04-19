@@ -93,7 +93,7 @@ export default {
         {
           id: 4,
           num: '04',
-          title: 'TEL- A full nextjs website for an NGO.',
+          title: 'TEL',
           description: 'The Essence League; fully managed web app for collecting donations, showcasing events and news',
           tags: ['Next.js', 'TailwindCss', 'REST API'],
           link: '#',

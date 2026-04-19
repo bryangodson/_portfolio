@@ -42,7 +42,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
   },
 
-  // ── beforeUnmount()
+  // beforeUnmount()
   // beforeUnmount() runs just before the component is destroyed.
   // Always clean up event listeners to prevent memory leaks!
   beforeUnmount() {
