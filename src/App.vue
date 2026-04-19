@@ -2,7 +2,7 @@
 import AppNav from "./components/AppNav.vue"
 import HeroSection from "./components/HeroSection.vue"
 import AboutSection    from './components/AboutSection.vue'
-
+import SkillsSection from "./components/SkillsSection.vue"
 </script>
 
 <template>
@@ -10,6 +10,7 @@ import AboutSection    from './components/AboutSection.vue'
     <AppNav/>
     <HeroSection/>
     <AboutSection/>
+    <SkillsSection/>
   </div>
 </template>
 

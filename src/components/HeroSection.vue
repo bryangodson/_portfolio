@@ -157,7 +157,6 @@ export default {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-top: -120px;
 }
 /* pulsing dot before the badge text */
 .hero__badge::before {
