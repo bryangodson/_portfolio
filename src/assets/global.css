@@ -1,0 +1,17 @@
+/** colors and theming **/
+:root{
+  --bg:       #0a0a0a;
+  --surface:  #111111;
+  --surface2: #1a1a1a;
+  --border:   #222222;
+  --text:     #e8e4dc;
+  --muted:    #666666;
+  --accent:   #c8f055;
+  --accent2:  #ff6b35;
+  --white:    #f0ece4;
+
+  /** typography **/
+  --font-sans:  'Syne', sans-serif;
+  --font-mono:  'DM Mono', monospace;
+  --font-serif: 'Instrument Serif', serif;
+}
