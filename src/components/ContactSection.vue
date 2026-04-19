@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style scoped>
-/* ── Center everything ────────────────────────────────────────────────────────── */
+/*Center everything*/
 .contact__inner {
   max-width: 900px;
   margin: 0 auto;
@@ -90,7 +90,7 @@ export default {
 /* Centered section label overrides the left-aligned default */
 .contact__label { justify-content: center; }
 
-/* ── Big headline ─────────────────────────────────────────────────────────────── */
+/* Big headline  */
 .contact__title {
   font-size: clamp(48px, 6vw, 96px);
   font-weight: 800;
@@ -107,7 +107,7 @@ export default {
   -webkit-text-stroke: 1px var(--text);
 }
 
-/* ── Sub-paragraph ────────────────────────────────────────────────────────────── */
+/* Sub-paragraph */
 .contact__sub {
   font-family: var(--font-mono);
   font-size: 13px;
@@ -117,7 +117,7 @@ export default {
   line-height: 1.8;
 }
 
-/* ── Contact buttons row ──────────────────────────────────────────────────────── */
+/* Contact buttons row  */
 .contact__links {
   display: flex;
   flex-wrap: wrap; /* wraps onto next line on narrow screens */
@@ -126,7 +126,7 @@ export default {
   margin-top: 48px;
 }
 
-/* ── Individual contact button ────────────────────────────────────────────────── */
+/*Individual contact button */
 .contact-link {
   display: flex;
   align-items: center;
@@ -149,7 +149,7 @@ export default {
 
 .contact-link__icon { font-size: 16px; }
 
-/* ── Mobile ──────────────────────────────────────────────────────────────────── */
+/* Mobile  */
 @media (max-width: 600px) {
   .contact-link { padding: 12px 18px; font-size: 11px; }
 }

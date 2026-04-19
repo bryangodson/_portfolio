@@ -46,7 +46,7 @@
         <!-- decorative offset border behind the photo -->
         <div class="hero__frame-border"></div>
         <!-- small location caption below the frame -->
-        <div class="hero__frame-label">Kumasi,Ghana — {{new Date().getFullYear()}}</div>
+        <div class="hero__frame-label">Kumasi,Ghana — {{currentYear}}</div>
       </div>
     </div>
     </div>
@@ -90,9 +90,13 @@ export default {
       ],
     }
   },
-
+  computed:{
+    currentYear(){
+      return new Date().getFullYear()
+    }
+  },
   mounted() {
-    // ── Hero entrance animation ────────────────────────────────────────────
+    // Hero entrance animation
     // We grab all the hero elements and stagger their fade-in on page load.
     // Note: this.$el refers to the root element of THIS component's template.
 

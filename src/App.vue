@@ -5,6 +5,8 @@ import AboutSection    from './components/AboutSection.vue'
 import SkillsSection from "./components/SkillsSection.vue"
 import WorkSection from "./components/WorkSection.vue"
 import ContactSection from "./components/ContactSection.vue"
+import AppFooter from "./components/AppFooter.vue"
+
 </script>
 
 <template>
@@ -15,6 +17,7 @@ import ContactSection from "./components/ContactSection.vue"
     <SkillsSection/>
     <WorkSection/>
     <ContactSection />
+    <AppFooter/>
   </div>
 </template>
 
