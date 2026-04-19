@@ -134,10 +134,31 @@ export default {
         {
           category: 'Tools & DevOps',
           skills: [
-            { name: 'Docker',    pct: '85%', level: 'Adv.'   },
-            { name: 'AWS',       pct: '80%', level: 'Adv.'   },
-            { name: 'Git / CI',  pct: '92%', level: 'Expert' },
-            { name: 'Redis',     pct: '75%', level: 'Solid'  },
+            {
+              name: 'Docker',
+              pct: '85%',
+              level: 'Adv.'
+            },
+            {
+              name: 'AWS',
+              pct: '50%',
+              level: 'Inter.'
+            },
+            {
+              name: 'Git / CI',
+              pct: '92%',
+              level: 'Expert'
+            },
+            {
+              name: 'Redis',
+              pct: '75%',
+              level: 'Solid'
+            },
+            {
+              name:'Postman',
+              pct:'90%',
+              level:'Expert'
+            }
           ],
         },
       ],
@@ -216,6 +237,7 @@ export default {
 
 /* progress bar */
 .skill-item__bar-wrap {
+
   width: 80px; height: 3px;
   background: var(--border);
   position: relative;
