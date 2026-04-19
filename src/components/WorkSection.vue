@@ -66,7 +66,7 @@ export default {
         {
           id: 1,
           num: '01',
-          title: 'Trecco - Wallet and Business Management',
+          title: 'Trecco',
           description: 'Full-stack Fintect application with wallet integration and ERP tools',
           tags: ['React Native','Expo', 'Node.js', 'PostgreSQL'],
           link: '#',
@@ -75,7 +75,7 @@ export default {
         {
           id: 2,
           num: '02',
-          title: 'Negxux - E-Commerce Platform',
+          title: 'Negxux',
           description: 'Multi-vendor marketplace with Flutterwave Checkout, admin panel, and inventory management',
           tags: ['TypeScript', 'Next.js', 'React Native'],
           link: '#',
@@ -84,7 +84,7 @@ export default {
         {
           id: 3,
           num: '03',
-          title: 'payflow — Payment request for businesses',
+          title: 'payflow',
           description: 'A centralised platform for collection payments from customers in an efficient manner.',
           tags: ['Golang', 'React Native', 'Docker'],
           link: '#',
@@ -147,7 +147,7 @@ export default {
 .work__grid {
   display: flex;
   flex-direction: column;
-  gap: 1px;         /* 1px gap creates a visible divider between rows */
+  gap: 5px;         /* 1px gap creates a visible divider between rows */
   margin-top: 60px;
 }
 
