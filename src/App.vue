@@ -6,12 +6,13 @@ import SkillsSection from "./components/SkillsSection.vue"
 import WorkSection from "./components/WorkSection.vue"
 import ContactSection from "./components/ContactSection.vue"
 import AppFooter from "./components/AppFooter.vue"
-
+import AppCursor from "./components/AppCursor.vue"
 </script>
 
 <template>
   <div id="portfolio">
     <AppNav/>
+    <AppCursor/>
     <HeroSection/>
     <AboutSection/>
     <SkillsSection/>
