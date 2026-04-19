@@ -120,7 +120,7 @@ export default {
               level: 'Expert'
             },
             {
-              name: 'Systems Design',
+              name: 'Express.js',
               pct: '78%',
               level: 'Solid'
             },
