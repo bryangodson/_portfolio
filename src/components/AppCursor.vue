@@ -21,8 +21,8 @@ export default {
   setup() {
     // Template refs (links to DOM elements)
     // When ref="" matches a variable name here, Vue sets it to the DOM element
-    const cursorEl     = ref(null)
-    const cursorRingEl = ref(null)
+    const cursorEl     = ref<HTMLElement | null>(null)
+    const cursorRingEl = ref<HTMLElement | null>(null)
 
     // Tracking variables
     // Mouse position — updated instantly on every mousemove event
@@ -30,11 +30,11 @@ export default {
     // Ring position — interpolated  toward mouse for a lag effect
     let ringX  = 0, ringY  = 0
     // Store the animation frame ID so we can cancel it on unmount
-    let animFrameId
+    let animFrameId: number | undefined
 
     // Mouse move handler
     // Every time the mouse moves, store the new coordinates
-    function onMouseMove(e) {
+    function onMouseMove(e: MouseEvent) {
       mouseX = e.clientX
       mouseY = e.clientY
     }
@@ -96,7 +96,9 @@ export default {
     // Always remove event listeners you added! Forgetting this causes memory leaks.
     onUnmounted(() => {
       document.removeEventListener('mousemove', onMouseMove)
-      cancelAnimationFrame(animFrameId) // stop the loop
+      if (animFrameId !== undefined) {
+        cancelAnimationFrame(animFrameId) // stop the loop
+      }
     })
 
     // Expose template refs to <template> so ref="" can bind to them

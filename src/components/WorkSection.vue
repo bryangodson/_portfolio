@@ -134,7 +134,7 @@ export default {
       },
       { threshold: 0.1 } // fire when just 10% is visible (rows are tall)
     )
-    this.$el.querySelectorAll('.fade-up').forEach((el) => observer.observe(el))
+    this.$el.querySelectorAll('.fade-up').forEach((el: Element) => observer.observe(el))
   },
 }
 </script>

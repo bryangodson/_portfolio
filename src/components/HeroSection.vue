@@ -104,7 +104,7 @@ export default {
       '.hero__badge, .line, .hero__subtitle, .hero__actions, .hero__stats'
     )
 
-    animItems.forEach((el, index) => {
+    animItems.forEach((el: HTMLElement, index: number) => {
       // Start invisible and shifted down
       el.style.opacity   = '0'
       el.style.transform = 'translateY(24px)'
