@@ -1,15 +1,11 @@
 <template>
   <section class="contact section-pad" id="contact">
-
     <div class="contact__inner">
-
       <!-- centered section label -->
       <div class="section-label contact__label">Let's connect</div>
 
       <!-- large headline with italic serif contrast -->
-      <h2 class="contact__title">
-        Let's build<br /><em>something great.</em>
-      </h2>
+      <h2 class="contact__title">Let's build<br /><em>something great.</em></h2>
 
       <!-- short descriptor paragraph -->
       <p class="contact__sub">
@@ -23,24 +19,18 @@
           :href binds the link's URL from the data.
           :key uses the label for uniqueness.
         -->
-        <a
-          v-for="link in contactLinks"
-          :key="link.label"
-          :href="link.href"
-          class="contact-link"
-        >
+        <a v-for="link in contactLinks" :key="link.label" :href="link.href" class="contact-link">
           <!-- icon and label rendered from data -->
           <component class="contact-link__icon" :is="link.icon" />
           {{ link.label }}
         </a>
       </div>
-
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import {Globe,Mail,Twitter,Linkedin,Github,FileUser} from "lucide-vue-next"
+import { Mail, Twitter, Linkedin, Github, FileUser } from 'lucide-vue-next'
 export default {
   name: 'ContactSection',
 
@@ -51,27 +41,27 @@ export default {
         {
           icon: Mail,
           label: 'Email me',
-          href: 'mailto:ppdnquh@gmail.com'
+          href: 'mailto:ppdnquh@gmail.com',
         },
         {
           icon: Twitter,
           label: 'Twitter / X',
-          href: 'https://twitter.com/iamdanquah'
+          href: 'https://twitter.com/iamdanquah',
         },
         {
           icon: Linkedin,
           label: 'LinkedIn',
-          href: 'https://linkedin.com'
+          href: 'https://linkedin.com',
         },
         {
           icon: Github,
           label: 'GitHub',
-          href: 'https://github.com/bryangodson'
+          href: 'https://github.com/bryangodson',
         },
         {
           icon: FileUser,
           label: 'Resume',
-          href: '/docs/bryan_cv.pdf'
+          href: '/docs/bryan_cv.pdf',
         },
       ],
     }
@@ -88,7 +78,9 @@ export default {
 }
 
 /* Centered section label overrides the left-aligned default */
-.contact__label { justify-content: center; }
+.contact__label {
+  justify-content: center;
+}
 
 /* Big headline  */
 .contact__title {
@@ -139,7 +131,10 @@ export default {
   border: 1px solid var(--border);
   padding: 14px 24px;
   text-decoration: none;
-  transition: color 0.25s, background 0.25s, border-color 0.25s;
+  transition:
+    color 0.25s,
+    background 0.25s,
+    border-color 0.25s;
 }
 .contact-link:hover {
   color: var(--bg);
@@ -147,10 +142,15 @@ export default {
   border-color: var(--accent);
 }
 
-.contact-link__icon { font-size: 16px; }
+.contact-link__icon {
+  font-size: 16px;
+}
 
 /* Mobile  */
 @media (max-width: 600px) {
-  .contact-link { padding: 12px 18px; font-size: 11px; }
+  .contact-link {
+    padding: 12px 18px;
+    font-size: 11px;
+  }
 }
 </style>

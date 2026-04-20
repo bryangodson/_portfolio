@@ -1,29 +1,27 @@
 <template>
   <section class="about section-pad" id="about">
-
     <!-- reusing the global utility classes from global.css -->
     <div class="section-label">About me</div>
     <h2 class="section-title">Engineer who <em>ships</em> real things.</h2>
 
     <div class="about__grid">
-
       <!-- left: bio text-->
       <div class="about__text">
         <p>
-          I'm a <strong>Full Stack Developer</strong> who thrives across the entire
-          stack — from architecting database schemas to crafting awesome UIs.
-          I care deeply about writing code that is clean, maintainable, and built
-          to scale under pressure.
+          I'm a <strong>Full Stack Developer</strong> who thrives across the entire stack — from
+          architecting database schemas to crafting awesome UIs. I care deeply about writing code
+          that is clean, maintainable, and built to scale under pressure.
         </p>
         <p>
           With 4+ years of experience, I've shipped production applications across
-          <strong>fintech, oil and gas, non-governmental organisations, reality tv shows and SaaS</strong>;working with early-stage
-          startups and established teams alike. I'm comfortable in ambiguity and
-          thrive when given ownership.
+          <strong
+            >fintech, oil and gas, non-governmental organisations, reality tv shows and SaaS</strong
+          >;working with early-stage startups and established teams alike. I'm comfortable in
+          ambiguity and thrive when given ownership.
         </p>
         <p>
-          Currently open to <strong>full-time roles, contract work,</strong> and
-          exciting collaborations. Let's build software that truly matters.
+          Currently open to <strong>full-time roles, contract work,</strong> and exciting
+          collaborations. Let's build software that truly matters.
         </p>
       </div>
 
@@ -34,11 +32,7 @@
           We add "fade-up" so the IntersectionObserver in mounted() can animate them.
           :key gives Vue a stable identifier for each element.
         -->
-        <div
-          v-for="card in cards"
-          :key="card.title"
-          class="about__card fade-up"
-        >
+        <div v-for="card in cards" :key="card.title" class="about__card fade-up">
           <!-- card.icon is an emoji; card.title and card.body come from data() -->
           <div>
             <component :is="card.icon" />
@@ -47,7 +41,6 @@
           <p>{{ card.body }}</p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -97,15 +90,15 @@ export default {
           // entry.isIntersecting is true when the element is visible in the viewport
           if (entry.isIntersecting) {
             entry.target.classList.add('visible') // triggers the CSS transition
-            observer.unobserve(entry.target)       // stop watching once animated
+            observer.unobserve(entry.target) // stop watching once animated
           }
         })
       },
-      { threshold: 0.15 } // fire when 15% of the element is visible
+      { threshold: 0.15 }, // fire when 15% of the element is visible
     )
 
     // Observe all .fade-up elements inside this component
-    this.$el.querySelectorAll('.fade-up').forEach((el:any) => observer.observe(el))
+    this.$el.querySelectorAll('.fade-up').forEach((el: Element) => observer.observe(el))
   },
 }
 </script>
@@ -149,7 +142,9 @@ export default {
   background: var(--surface2);
   padding: 28px 32px;
   border-left: 3px solid transparent; /* placeholder for hover accent */
-  transition: border-color 0.3s, background 0.3s;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
 }
 .about__card:hover {
   /*border-color: var(--accent);*/

@@ -1,6 +1,5 @@
 <template>
   <div class="work-item__inner">
-
     <!-- project number (e.g. "01") -->
     <span class="work-item__num">{{ project.num }}</span>
 
@@ -12,19 +11,14 @@
 
     <!-- tech tags — v-for over the project's tags array -->
     <div class="work-item__tags">
-      <span
-        v-for="tag in project.tags"
-        :key="tag"
-        class="tag"
-      >
+      <span v-for="tag in project.tags" :key="tag" class="tag">
         {{ tag }}
       </span>
     </div>
-
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'WorkItem',
 
@@ -93,7 +87,12 @@ export default {
 
 /* mobile — hide tags to save space*/
 @media (max-width: 900px) {
-  .work-item__inner { grid-template-columns: 60px 1fr; gap: 16px; }
-  .work-item__tags  { display: none; }
+  .work-item__inner {
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+  }
+  .work-item__tags {
+    display: none;
+  }
 }
 </style>
